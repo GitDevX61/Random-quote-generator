@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+  background: linear-gradient(to left bottom, lightgreen, lightblue);
+  /* min-height: 100vh - the element should occupy the web browser viewport height;
+  need it, so that vertical alignment works; */
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.container {
+  background-color: rgba(255, 255, 255, .3);
+  padding: 30px;
+  border-style: solid;
+  border-radius: 15px;
+  /* using % width makes it responsive */
+  width: 85%;
+  margin: 10px;
+  text-align: center;
+}
+
+.heading {
+  font-size: 35px;
+  font-weight: 700;
+}
+
+.quote {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.author {
+  font-size: 25px;
+  margin: 10px;
+  font-style: italic;
+}
+
+.btn {
+  font-size: 18px;
+  border-style: solid;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 10px;
+  margin-top: 15px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-color: rgba(0, 0, 0, 0.8);
+  text-transform: uppercase;
+  width: 300px;
+}
+
+.btn:hover {
+  background-color: rgba(255, 255, 255, 0.6);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+  transition: all 100ms ease;
+}
+
+.btn:active {
+  transform: scale(0.96);
+}
